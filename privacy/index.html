@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Tokki</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='44' fill='%236A4BF2'/%3E%3Cg transform='translate(100 100) scale(0.84) translate(-94.5 -101)'%3E%3Cg fill='%23F8F6F1'%3E%3Crect x='69.5' y='18' width='29' height='110' rx='14.5' transform='rotate(-14 84 128)'/%3E%3Crect x='101.5' y='16' width='29' height='112' rx='14.5' transform='rotate(8 116 128)'/%3E%3Ccircle cx='100' cy='140' r='44'/%3E%3C/g%3E%3Ccircle cx='78' cy='132' r='5.5' fill='%236A4BF2'/%3E%3Ccircle cx='122' cy='132' r='5.5' fill='%236A4BF2'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --cream: #F8F6F1;
+    --ink: #16151A;
+    --ink-mute: rgba(22, 21, 26, 0.65);
+    --violet: #6A4BF2;
+    --border: rgba(22, 21, 26, 0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 40px 20px 80px;
+  }
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .lang-switch button {
+    padding: 10px 24px;
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--ink);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .lang-switch button.active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .brand {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .brand-logo {
+    height: clamp(115px, 24vw, 168px);
+    width: auto;
+    display: block;
+    margin: 0 auto 18px;
+  }
+  .brand-name { font-size: 20px; font-weight: 800; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+  .last-updated {
+    color: var(--ink-mute);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 8px; }
+  p { margin-bottom: 14px; color: var(--ink); font-size: 15px; }
+  ul { margin: 12px 0 20px 24px; }
+  li { margin-bottom: 8px; font-size: 15px; }
+  a { color: var(--violet); text-decoration: underline; text-underline-offset: 3px; }
+  strong { font-weight: 700; }
+  .callout {
+    background: #fff;
+    border-left: 4px solid var(--violet);
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 24px 0;
+    font-size: 15px;
+  }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--ink-mute);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="brand">
+    <svg class="brand-logo" viewBox="42 14 106 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokki"><g fill="#6A4BF2"><rect x="69.5" y="18" width="29" height="110" rx="14.5" transform="rotate(-14 84 128)"/><rect x="101.5" y="16" width="29" height="112" rx="14.5" transform="rotate(8 116 128)"/><circle cx="100" cy="140" r="44"/></g><circle cx="78" cy="132" r="5.5" fill="#16151A"/><circle cx="122" cy="132" r="5.5" fill="#16151A"/></svg>
+    <div class="brand-name">Tokki</div>
+  </div>
+
+  <div class="lang-switch">
+    <button class="active" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+
+  <!-- FRENCH VERSION -->
+  <div class="lang-content active" id="fr">
+    <h1>Politique de confidentialité</h1>
+    <div class="last-updated">Dernière mise à jour: 13 août 2026</div>
+
+    <div class="callout">
+      <strong>En bref:</strong> Tokki traite vos enregistrements audio pour générer des résumés et fiches de révision. Nous ne vendons rien, n'affichons aucune publicité ciblée, et supprimons vos audios sous 60 secondes après traitement. Vos résumés vous appartiennent.
+    </div>
+
+    <h2>1. Qui sommes-nous ?</h2>
+    <p>Tokki est une application mobile éditée par <strong>Kassim Warioba</strong> (ci-après "nous", "notre" ou "Tokki"), en qualité d'entrepreneur individuel.</p>
+    <p><strong>Contact:</strong> <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    <strong>Site web:</strong> <a href="https://tokki.my">https://tokki.my</a></p>
+
+    <h2>2. Données que nous collectons</h2>
+
+    <h3>Données que vous nous fournissez volontairement</h3>
+    <ul>
+      <li><strong>Enregistrements audio</strong> de vos cours (uniquement lorsque vous appuyez sur le bouton d'enregistrement)</li>
+      <li><strong>Préférences d'onboarding</strong>: prénom, niveau d'études, heures de cours par semaine, difficultés (choisis parmi une liste prédéfinie)</li>
+      <li><strong>Contenu généré</strong>: transcriptions, résumés, fiches de révision créés automatiquement à partir de vos enregistrements</li>
+    </ul>
+
+    <h3>Données créées automatiquement</h3>
+    <ul>
+      <li><strong>Identifiant utilisateur anonyme</strong>: un UUID généré aléatoirement (aucun nom, email, mot de passe requis)</li>
+      <li><strong>Informations d'abonnement</strong>: statut, date de renouvellement (via Apple + RevenueCat)</li>
+      <li><strong>Données techniques minimales</strong>: version iOS, type d'appareil (fournies par Apple pour la compatibilité)</li>
+    </ul>
+
+    <h3>Ce que nous ne collectons PAS</h3>
+    <ul>
+      <li>Aucune donnée de localisation (GPS)</li>
+      <li>Aucun contact, photo, ou fichier de votre téléphone</li>
+      <li>Aucun traceur publicitaire</li>
+      <li>Aucun cookie tiers</li>
+    </ul>
+
+    <h2>3. Comment utilisons-nous vos données ?</h2>
+    <ul>
+      <li><strong>Enregistrements audio</strong>: transmis à OpenAI (Whisper API) pour transcription automatique. Supprimés de nos serveurs dans les 60 secondes suivant le traitement.</li>
+      <li><strong>Transcriptions</strong>: envoyées à Anthropic (Claude API) pour générer résumé et fiches de révision.</li>
+      <li><strong>Résumés + fiches</strong>: stockés dans notre base Supabase (serveurs Zurich, UE) associés à votre identifiant anonyme, uniquement accessible par vous.</li>
+      <li><strong>Abonnement</strong>: géré par Apple, statut relayé par RevenueCat pour déverrouiller les fonctionnalités payantes.</li>
+    </ul>
+
+    <p><strong>Base légale (RGPD Art. 6):</strong> exécution du contrat que vous concluez en utilisant l'App.</p>
+
+    <p><strong>Nous ne vendons AUCUNE donnée. Nous n'affichons AUCUNE publicité ciblée. Nous n'utilisons AUCUN traceur publicitaire.</strong></p>
+
+    <h2>4. Sous-traitants (data processors)</h2>
+    <p>Pour fonctionner, Tokki repose sur les services suivants:</p>
+    <ul>
+      <li><strong>OpenAI, Inc.</strong> (États-Unis) — transcription audio via Whisper API. <a href="https://openai.com/policies/privacy-policy">Politique OpenAI</a></li>
+      <li><strong>Anthropic, PBC</strong> (États-Unis) — génération de résumés via Claude API. <a href="https://www.anthropic.com/legal/privacy">Politique Anthropic</a></li>
+      <li><strong>Supabase, Inc.</strong> (États-Unis, hébergement UE Zurich) — base de données + authentification. <a href="https://supabase.com/privacy">Politique Supabase</a></li>
+      <li><strong>RevenueCat, Inc.</strong> (États-Unis) — gestion d'abonnement. <a href="https://www.revenuecat.com/privacy">Politique RevenueCat</a></li>
+      <li><strong>Apple, Inc.</strong> — App Store, paiements. <a href="https://www.apple.com/legal/privacy/">Politique Apple</a></li>
+    </ul>
+
+    <p>Les transferts hors UE (vers OpenAI, Anthropic, RevenueCat, Apple) sont encadrés par les <strong>Clauses Contractuelles Types</strong> de la Commission Européenne (décision d'adéquation ou CCT selon les cas).</p>
+
+    <h2>5. Durée de conservation</h2>
+    <ul>
+      <li><strong>Enregistrements audio</strong>: supprimés sous 60 secondes après traitement.</li>
+      <li><strong>Transcriptions, résumés, fiches</strong>: conservés tant que votre compte est actif + 30 jours après suppression.</li>
+      <li><strong>Données d'abonnement</strong>: conservées 3 ans à des fins comptables (obligation légale Apple).</li>
+    </ul>
+
+    <h2>6. Vos droits (RGPD)</h2>
+    <p>En tant que résident de l'Union Européenne, vous disposez des droits suivants:</p>
+    <ul>
+      <li><strong>Accès</strong> — obtenir une copie de vos données</li>
+      <li><strong>Rectification</strong> — corriger des données incorrectes</li>
+      <li><strong>Effacement</strong> ("droit à l'oubli") — supprimer votre compte + données</li>
+      <li><strong>Portabilité</strong> — export de vos résumés au format JSON sur demande</li>
+      <li><strong>Opposition</strong> — vous opposer au traitement</li>
+      <li><strong>Limitation</strong> — restreindre le traitement</li>
+    </ul>
+    <p>Pour exercer vos droits: <a href="mailto:contact@tokki.my">contact@tokki.my</a>. Réponse sous 30 jours maximum.</p>
+    <p>En cas de litige non résolu, vous pouvez saisir la <strong>CNIL</strong>: <a href="https://www.cnil.fr">www.cnil.fr</a> — 3 place de Fontenoy, TSA 80715, 75334 PARIS Cedex 07.</p>
+
+    <h2>7. Sécurité</h2>
+    <ul>
+      <li>Chiffrement en transit (TLS 1.3)</li>
+      <li>Chiffrement au repos (AES-256, opéré par Supabase)</li>
+      <li>Authentification anonyme (aucun mot de passe utilisateur à protéger)</li>
+      <li>Accès aux données limité au fondateur (Kassim Warioba)</li>
+      <li>Aucune donnée n'est copiée sur des équipements personnels</li>
+    </ul>
+
+    <h2>8. Enfants</h2>
+    <p>Tokki est destiné aux étudiants de <strong>13 ans et plus</strong>. Nous ne collectons pas sciemment de données d'enfants de moins de 13 ans. Si vous êtes parent et pensez que votre enfant a créé un compte, contactez-nous et nous supprimerons ses données.</p>
+
+    <h2>9. Modifications</h2>
+    <p>Nous pouvons mettre à jour cette politique. Toute modification substantielle sera notifiée dans l'App avec 30 jours de préavis. La date de dernière mise à jour figure en tête de page.</p>
+
+    <h2>10. Contact</h2>
+    <p><strong>Kassim Warioba</strong>, éditeur de Tokki<br>
+    Email: <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    Site: <a href="https://tokki.my">https://tokki.my</a></p>
+
+    <p><strong>Autorité de contrôle française:</strong> CNIL — 3 place de Fontenoy, TSA 80715, 75334 PARIS Cedex 07 — <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+  </div>
+
+  <!-- ENGLISH VERSION -->
+  <div class="lang-content" id="en">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last updated: August 13, 2026</div>
+
+    <div class="callout">
+      <strong>TL;DR:</strong> Tokki processes your audio recordings to generate summaries and study cards. We don't sell anything, don't show targeted ads, and delete your audio within 60 seconds of processing. Your summaries belong to you.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>Tokki is a mobile application published by <strong>Kassim Warioba</strong> (hereinafter "we", "our", or "Tokki"), as a sole trader.</p>
+    <p><strong>Contact:</strong> <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    <strong>Website:</strong> <a href="https://tokki.my">https://tokki.my</a></p>
+
+    <h2>2. Data we collect</h2>
+
+    <h3>Data you voluntarily provide</h3>
+    <ul>
+      <li><strong>Audio recordings</strong> of your lectures (only when you tap the record button)</li>
+      <li><strong>Onboarding preferences</strong>: first name, education level, hours of class per week, challenges (chosen from a predefined list)</li>
+      <li><strong>Generated content</strong>: transcripts, summaries, study cards created automatically from your recordings</li>
+    </ul>
+
+    <h3>Data created automatically</h3>
+    <ul>
+      <li><strong>Anonymous user ID</strong>: a randomly generated UUID (no name, email, or password required)</li>
+      <li><strong>Subscription information</strong>: status, renewal date (via Apple + RevenueCat)</li>
+      <li><strong>Minimal technical data</strong>: iOS version, device type (provided by Apple for compatibility)</li>
+    </ul>
+
+    <h3>What we do NOT collect</h3>
+    <ul>
+      <li>No location data (GPS)</li>
+      <li>No contacts, photos, or files from your phone</li>
+      <li>No advertising trackers</li>
+      <li>No third-party cookies</li>
+    </ul>
+
+    <h2>3. How we use your data</h2>
+    <ul>
+      <li><strong>Audio recordings</strong>: sent to OpenAI (Whisper API) for automatic transcription. Deleted from our servers within 60 seconds of processing.</li>
+      <li><strong>Transcripts</strong>: sent to Anthropic (Claude API) to generate summary and study cards.</li>
+      <li><strong>Summaries + cards</strong>: stored in our Supabase database (EU servers in Zurich) linked to your anonymous ID, only accessible by you.</li>
+      <li><strong>Subscription</strong>: managed by Apple, status relayed by RevenueCat to unlock paid features.</li>
+    </ul>
+
+    <p><strong>Legal basis (GDPR Art. 6):</strong> performance of the contract you enter into by using the App.</p>
+
+    <p><strong>We do NOT sell any data. We do NOT show targeted ads. We do NOT use any advertising trackers.</strong></p>
+
+    <h2>4. Data processors (sub-processors)</h2>
+    <p>Tokki relies on the following services to function:</p>
+    <ul>
+      <li><strong>OpenAI, Inc.</strong> (USA) — audio transcription via Whisper API. <a href="https://openai.com/policies/privacy-policy">OpenAI Policy</a></li>
+      <li><strong>Anthropic, PBC</strong> (USA) — summary generation via Claude API. <a href="https://www.anthropic.com/legal/privacy">Anthropic Policy</a></li>
+      <li><strong>Supabase, Inc.</strong> (USA, EU hosting in Zurich) — database + authentication. <a href="https://supabase.com/privacy">Supabase Policy</a></li>
+      <li><strong>RevenueCat, Inc.</strong> (USA) — subscription management. <a href="https://www.revenuecat.com/privacy">RevenueCat Policy</a></li>
+      <li><strong>Apple, Inc.</strong> — App Store, payments. <a href="https://www.apple.com/legal/privacy/">Apple Policy</a></li>
+    </ul>
+
+    <p>Transfers outside the EU (to OpenAI, Anthropic, RevenueCat, Apple) are governed by <strong>Standard Contractual Clauses</strong> from the European Commission (adequacy decision or SCCs as applicable).</p>
+
+    <h2>5. Data retention</h2>
+    <ul>
+      <li><strong>Audio recordings</strong>: deleted within 60 seconds of processing.</li>
+      <li><strong>Transcripts, summaries, study cards</strong>: kept while your account is active + 30 days after deletion.</li>
+      <li><strong>Subscription data</strong>: kept for 3 years for accounting purposes (Apple legal requirement).</li>
+    </ul>
+
+    <h2>6. Your rights (GDPR)</h2>
+    <p>As an EU resident, you have the following rights:</p>
+    <ul>
+      <li><strong>Access</strong> — obtain a copy of your data</li>
+      <li><strong>Rectification</strong> — correct incorrect data</li>
+      <li><strong>Erasure</strong> ("right to be forgotten") — delete your account + data</li>
+      <li><strong>Portability</strong> — export of your summaries in JSON format on request</li>
+      <li><strong>Objection</strong> — object to processing</li>
+      <li><strong>Restriction</strong> — restrict processing</li>
+    </ul>
+    <p>To exercise your rights: <a href="mailto:contact@tokki.my">contact@tokki.my</a>. Response within 30 days maximum.</p>
+    <p>For unresolved disputes, you may contact the <strong>CNIL</strong> (French supervisory authority): <a href="https://www.cnil.fr">www.cnil.fr</a>.</p>
+
+    <h2>7. Security</h2>
+    <ul>
+      <li>Encryption in transit (TLS 1.3)</li>
+      <li>Encryption at rest (AES-256, operated by Supabase)</li>
+      <li>Anonymous authentication (no user password to protect)</li>
+      <li>Data access limited to the founder (Kassim Warioba)</li>
+      <li>No data is copied to personal devices</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>Tokki is intended for students aged <strong>13 and older</strong>. We do not knowingly collect data from children under 13. If you are a parent and believe your child has created an account, contact us and we will delete their data.</p>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy. Any substantial modification will be notified in the App with 30 days notice. The date of last update is at the top of this page.</p>
+
+    <h2>10. Contact</h2>
+    <p><strong>Kassim Warioba</strong>, publisher of Tokki<br>
+    Email: <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    Website: <a href="https://tokki.my">https://tokki.my</a></p>
+  </div>
+
+  <footer>
+    Tokki · Made with care in France · <a href="https://tokki.my">tokki.my</a>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+    document.documentElement.lang = lang;
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions générales d'utilisation — Tokki</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='44' fill='%236A4BF2'/%3E%3Cg transform='translate(100 100) scale(0.84) translate(-94.5 -101)'%3E%3Cg fill='%23F8F6F1'%3E%3Crect x='69.5' y='18' width='29' height='110' rx='14.5' transform='rotate(-14 84 128)'/%3E%3Crect x='101.5' y='16' width='29' height='112' rx='14.5' transform='rotate(8 116 128)'/%3E%3Ccircle cx='100' cy='140' r='44'/%3E%3C/g%3E%3Ccircle cx='78' cy='132' r='5.5' fill='%236A4BF2'/%3E%3Ccircle cx='122' cy='132' r='5.5' fill='%236A4BF2'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --cream: #F8F6F1;
+    --ink: #16151A;
+    --ink-mute: rgba(22, 21, 26, 0.65);
+    --violet: #6A4BF2;
+    --border: rgba(22, 21, 26, 0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 40px 20px 80px;
+  }
+  .container { max-width: 780px; margin: 0 auto; }
+  .lang-switch {
+    display: flex; gap: 8px; justify-content: center; margin-bottom: 40px;
+  }
+  .lang-switch button {
+    padding: 10px 24px; border: 2px solid var(--border); background: transparent;
+    color: var(--ink); border-radius: 100px; font-size: 14px; font-weight: 600;
+    cursor: pointer; font-family: inherit;
+  }
+  .lang-switch button.active {
+    background: var(--ink); color: #fff; border-color: var(--ink);
+  }
+  .brand { text-align: center; margin-bottom: 40px; }
+  .brand-logo {
+    height: clamp(115px, 24vw, 168px);
+    width: auto;
+    display: block;
+    margin: 0 auto 18px;
+  }
+  .brand-name { font-size: 20px; font-weight: 800; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+  .last-updated { color: var(--ink-mute); font-size: 14px; margin-bottom: 40px; }
+  h2 {
+    font-size: 22px; font-weight: 700; margin: 40px 0 16px;
+    padding-top: 24px; border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin-bottom: 14px; font-size: 15px; }
+  ul { margin: 12px 0 20px 24px; }
+  li { margin-bottom: 8px; font-size: 15px; }
+  a { color: var(--violet); text-decoration: underline; text-underline-offset: 3px; }
+  strong { font-weight: 700; }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+  .callout {
+    background: #fff; border-left: 4px solid var(--violet); padding: 20px 24px;
+    border-radius: 8px; margin: 24px 0; font-size: 15px;
+  }
+  footer {
+    margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border);
+    text-align: center; color: var(--ink-mute); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="brand">
+    <svg class="brand-logo" viewBox="42 14 106 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokki"><g fill="#6A4BF2"><rect x="69.5" y="18" width="29" height="110" rx="14.5" transform="rotate(-14 84 128)"/><rect x="101.5" y="16" width="29" height="112" rx="14.5" transform="rotate(8 116 128)"/><circle cx="100" cy="140" r="44"/></g><circle cx="78" cy="132" r="5.5" fill="#16151A"/><circle cx="122" cy="132" r="5.5" fill="#16151A"/></svg>
+    <div class="brand-name">Tokki</div>
+  </div>
+
+  <div class="lang-switch">
+    <button class="active" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+
+  <!-- FRENCH -->
+  <div class="lang-content active" id="fr">
+    <h1>Conditions générales d'utilisation</h1>
+    <div class="last-updated">Dernière mise à jour: 13 août 2026</div>
+
+    <div class="callout">
+      <strong>En bref:</strong> Tokki t'aide à enregistrer tes cours et à générer des résumés IA. Essai gratuit 3 jours, puis 4,99€/mois ou 39,99€/an. Résiliable en 1 clic. Utilise-le pour réviser, pas pour tricher.
+    </div>
+
+    <h2>1. Objet</h2>
+    <p>Les présentes conditions générales d'utilisation (ci-après "CGU") régissent l'utilisation de l'application mobile Tokki (ci-après "l'App") éditée par Kassim Warioba, entrepreneur individuel.</p>
+    <p>En téléchargeant, installant ou utilisant l'App, vous acceptez pleinement ces CGU. Si vous n'êtes pas d'accord, désinstallez l'App.</p>
+
+    <h2>2. Description du service</h2>
+    <p>Tokki est une application permettant:</p>
+    <ul>
+      <li>D'enregistrer de l'audio (cours, réunions, notes vocales)</li>
+      <li>De transcrire automatiquement l'audio via intelligence artificielle</li>
+      <li>De générer des résumés structurés et des fiches de révision</li>
+      <li>De classer automatiquement les notes par matière</li>
+    </ul>
+
+    <h2>3. Licence d'utilisation</h2>
+    <p>Nous vous accordons une licence <strong>limitée, personnelle, non exclusive, non transférable</strong> pour utiliser l'App sur vos appareils iOS. Vous ne pouvez pas la revendre, la louer ou la sous-licencier.</p>
+
+    <h2>4. Abonnement + tarifs</h2>
+    <ul>
+      <li><strong>Essai gratuit:</strong> 3 jours (une seule fois par identifiant Apple)</li>
+      <li><strong>Mensuel:</strong> 4,99€ / mois</li>
+      <li><strong>Annuel:</strong> 39,99€ / an (économie de 33% par rapport au mensuel)</li>
+    </ul>
+    <p><strong>Renouvellement automatique.</strong> À la fin de la période payée, votre abonnement se renouvelle sauf annulation.</p>
+    <p><strong>Annulation:</strong> Vous pouvez annuler à tout moment via <em>Réglages iOS → votre nom → Abonnements → Tokki</em>. L'annulation prend effet à la fin de la période déjà payée (pas de remboursement au prorata).</p>
+
+    <h2>5. Paiements + remboursements</h2>
+    <p>Tous les paiements sont gérés par <strong>Apple</strong> via votre identifiant Apple. Nous ne collectons ni ne stockons vos informations bancaires.</p>
+    <p><strong>Remboursements:</strong> Les demandes suivent la procédure Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Nous ne pouvons pas rembourser directement.</p>
+    <p><strong>Droit de rétractation (UE):</strong> En achetant un abonnement numérique commencé immédiatement, vous renoncez au droit de rétractation de 14 jours conformément à l'article L221-28 du Code de la consommation.</p>
+
+    <h2>6. Utilisation acceptable</h2>
+    <p>Vous vous engagez à ne pas:</p>
+    <ul>
+      <li>Utiliser l'App à des fins illégales</li>
+      <li>Enregistrer des personnes sans leur consentement lorsque la loi l'exige (notamment: conversations privées, examens fermés)</li>
+      <li>Utiliser l'App pour tricher lors d'examens surveillés</li>
+      <li>Reverse-engineer, décompiler, extraire ou modifier l'App</li>
+      <li>Partager votre compte avec un tiers</li>
+      <li>Enregistrer du contenu protégé sans droits (musique, cours enregistrés déjà commercialisés)</li>
+    </ul>
+    <p><strong>Responsabilité:</strong> Il vous appartient de vérifier les règles de votre établissement scolaire concernant l'enregistrement des cours. La responsabilité de l'usage repose sur vous.</p>
+
+    <h2>7. Propriété intellectuelle</h2>
+    <p><strong>Ce qui nous appartient:</strong> Le code, le design, le nom "Tokki", le logo et l'ensemble des éléments de l'App restent notre propriété exclusive.</p>
+    <p><strong>Ce qui vous appartient:</strong> Le contenu que vous créez (vos enregistrements, transcriptions, résumés) reste votre propriété. Vous nous accordez uniquement une licence temporaire pour traiter ce contenu et vous fournir le service.</p>
+
+    <h2>8. Limitation de responsabilité</h2>
+    <p><strong>Précision IA:</strong> Les résumés et fiches générés par intelligence artificielle peuvent contenir des erreurs, des omissions ou des hallucinations. Tokki est un <strong>outil d'aide à la révision</strong>, pas une source académique. Vous restez responsable de vérifier le contenu avant tout usage académique important (contrôles, examens, mémoires).</p>
+    <p><strong>Disponibilité:</strong> Nous nous efforçons de maintenir l'App disponible mais ne garantissons pas une disponibilité 24/7. Des interruptions peuvent survenir (maintenance, indisponibilité de nos sous-traitants IA).</p>
+    <p><strong>Plafond de responsabilité:</strong> Dans la limite du droit applicable, notre responsabilité totale envers vous, tous préjudices confondus, est limitée au montant que vous nous avez payé sur les 12 mois précédant le fait générateur.</p>
+
+    <h2>9. Résiliation</h2>
+    <p><strong>De votre part:</strong> Vous pouvez cesser d'utiliser l'App à tout moment en la désinstallant. Pour arrêter les paiements, annulez votre abonnement via Réglages iOS.</p>
+    <p><strong>De notre part:</strong> Nous pouvons suspendre ou résilier votre accès en cas de violation grave de ces CGU (fraude, contournement, usage illégal). Un préavis raisonnable sera donné sauf urgence.</p>
+
+    <h2>10. Droit applicable + juridiction</h2>
+    <p>Les présentes CGU sont régies par le <strong>droit français</strong>. En cas de litige, les tribunaux français seront compétents.</p>
+    <div class="callout">
+      <strong>Consommateurs UE:</strong> Vous pouvez également saisir la plateforme de règlement en ligne des litiges de la Commission européenne: <a href="https://ec.europa.eu/consumers/odr">ec.europa.eu/consumers/odr</a>
+    </div>
+
+    <h2>11. Modifications</h2>
+    <p>Nous pouvons modifier ces CGU. Toute modification substantielle vous sera notifiée dans l'App avec 30 jours de préavis. L'utilisation continue après ce délai vaut acceptation.</p>
+
+    <h2>12. Contact</h2>
+    <p><strong>Kassim Warioba</strong> — entrepreneur individuel<br>
+    Email: <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    Site: <a href="https://tokki.my">https://tokki.my</a></p>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="lang-content" id="en">
+    <h1>Terms of Service</h1>
+    <div class="last-updated">Last updated: August 13, 2026</div>
+
+    <div class="callout">
+      <strong>TL;DR:</strong> Tokki helps you record lectures and generate AI summaries. 3-day free trial, then €4.99/month or €39.99/year. Cancel anytime in one click. Use it to study, not to cheat.
+    </div>
+
+    <h2>1. Purpose</h2>
+    <p>These Terms of Service (hereinafter "Terms") govern the use of the mobile application Tokki (hereinafter "the App") published by Kassim Warioba, sole trader.</p>
+    <p>By downloading, installing or using the App, you fully accept these Terms. If you disagree, uninstall the App.</p>
+
+    <h2>2. Service description</h2>
+    <p>Tokki is an application that allows you to:</p>
+    <ul>
+      <li>Record audio (lectures, meetings, voice notes)</li>
+      <li>Automatically transcribe audio using artificial intelligence</li>
+      <li>Generate structured summaries and study cards</li>
+      <li>Auto-organize notes by subject</li>
+    </ul>
+
+    <h2>3. License</h2>
+    <p>We grant you a <strong>limited, personal, non-exclusive, non-transferable</strong> license to use the App on your iOS devices. You may not resell, rent or sublicense it.</p>
+
+    <h2>4. Subscription + pricing</h2>
+    <ul>
+      <li><strong>Free trial:</strong> 3 days (once per Apple ID)</li>
+      <li><strong>Monthly:</strong> €4.99 / month</li>
+      <li><strong>Yearly:</strong> €39.99 / year (33% savings vs monthly)</li>
+    </ul>
+    <p><strong>Automatic renewal.</strong> At the end of each paid period, your subscription renews unless canceled.</p>
+    <p><strong>Cancellation:</strong> You can cancel at any time via <em>iOS Settings → your name → Subscriptions → Tokki</em>. Cancellation takes effect at the end of the already-paid period (no pro-rated refund).</p>
+
+    <h2>5. Payments + refunds</h2>
+    <p>All payments are managed by <strong>Apple</strong> via your Apple ID. We neither collect nor store your payment information.</p>
+    <p><strong>Refunds:</strong> Requests follow Apple's procedure: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot refund directly.</p>
+    <p><strong>Right of withdrawal (EU):</strong> By purchasing a digital subscription starting immediately, you waive the 14-day withdrawal right pursuant to Article L221-28 of the French Consumer Code.</p>
+
+    <h2>6. Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for illegal purposes</li>
+      <li>Record people without their consent when required by law (including: private conversations, closed exams)</li>
+      <li>Use the App to cheat on supervised exams</li>
+      <li>Reverse-engineer, decompile, extract or modify the App</li>
+      <li>Share your account with a third party</li>
+      <li>Record protected content without rights (music, commercially available recorded lectures)</li>
+    </ul>
+    <p><strong>Responsibility:</strong> It is your responsibility to check your school's rules regarding lecture recording. Usage responsibility rests with you.</p>
+
+    <h2>7. Intellectual property</h2>
+    <p><strong>What we own:</strong> The code, design, name "Tokki", logo and all elements of the App remain our exclusive property.</p>
+    <p><strong>What you own:</strong> The content you create (your recordings, transcripts, summaries) remains your property. You grant us only a temporary license to process this content and provide you the service.</p>
+
+    <h2>8. Limitation of liability</h2>
+    <p><strong>AI accuracy:</strong> Summaries and study cards generated by AI may contain errors, omissions or hallucinations. Tokki is a <strong>study aid tool</strong>, not an academic source. You remain responsible for verifying content before any important academic use (tests, exams, thesis).</p>
+    <p><strong>Availability:</strong> We strive to keep the App available but do not guarantee 24/7 uptime. Interruptions may occur (maintenance, unavailability of our AI sub-processors).</p>
+    <p><strong>Liability cap:</strong> To the extent permitted by applicable law, our total liability to you, for all damages combined, is limited to the amount you paid us over the 12 months preceding the triggering event.</p>
+
+    <h2>9. Termination</h2>
+    <p><strong>By you:</strong> You can stop using the App at any time by uninstalling it. To stop payments, cancel your subscription via iOS Settings.</p>
+    <p><strong>By us:</strong> We may suspend or terminate your access in case of serious violation of these Terms (fraud, circumvention, illegal use). Reasonable notice will be given unless urgent.</p>
+
+    <h2>10. Governing law + jurisdiction</h2>
+    <p>These Terms are governed by <strong>French law</strong>. In case of dispute, French courts will have jurisdiction.</p>
+    <div class="callout">
+      <strong>EU consumers:</strong> You may also use the European Commission's online dispute resolution platform: <a href="https://ec.europa.eu/consumers/odr">ec.europa.eu/consumers/odr</a>
+    </div>
+
+    <h2>11. Changes</h2>
+    <p>We may modify these Terms. Any substantial modification will be notified in the App with 30 days notice. Continued use after this period constitutes acceptance.</p>
+
+    <h2>12. Contact</h2>
+    <p><strong>Kassim Warioba</strong> — sole trader<br>
+    Email: <a href="mailto:contact@tokki.my">contact@tokki.my</a><br>
+    Website: <a href="https://tokki.my">https://tokki.my</a></p>
+  </div>
+
+  <footer>
+    Tokki · Made with care in France · <a href="https://tokki.my">tokki.my</a>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+    document.documentElement.lang = lang;
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
