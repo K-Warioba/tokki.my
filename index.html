@@ -140,6 +140,60 @@
   .why p:last-child { margin-bottom: 0; }
   .why strong { color: var(--violet); }
 
+  /* FAQ */
+  .faq-list { display: grid; gap: 12px; }
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .faq-item[open] { border-color: var(--violet); }
+  .faq-item summary {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+    padding: 20px 24px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: "";
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--violet);
+    border-bottom: 2px solid var(--violet);
+    transform: rotate(45deg);
+    margin-top: -4px;
+    transition: transform .15s ease;
+  }
+  .faq-item[open] summary::after {
+    transform: rotate(225deg);
+    margin-top: 4px;
+  }
+  .faq-item .ans {
+    padding: 0 24px 22px;
+    font-size: 15px;
+    color: var(--ink-mute);
+  }
+  .faq-item .ans p + p { margin-top: 10px; }
+  .faq-item .ans a { color: var(--violet); font-weight: 600; }
+  .faq-item .ans strong { color: var(--ink); }
+  .faq-item summary:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: -3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .faq-item summary::after { transition: none; }
+  }
+
   /* Pricing */
   .plans { display: grid; gap: 16px; }
   @media (min-width: 720px) { .plans { grid-template-columns: repeat(2, 1fr); } }
@@ -223,6 +277,48 @@
     </div>
   </section>
 
+  <section id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Questions fréquentes</h2>
+    <div class="faq-list">
+      <details class="faq-item" name="faq">
+        <summary>Comment Tokki transforme un cours en fiches de révision ?</summary>
+        <div class="ans">
+          <p>Tu poses ton iPhone, tu enregistres le <strong>CM</strong> ou le <strong>TD</strong>, tu écoutes. Tokki transcrit, puis l’IA rédige un résumé structuré et des fiches de révision — en français, en quelques dizaines de secondes. Tu révises sur les fiches, pas sur l’audio.</p>
+        </div>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary>Tokki, c’est pour la Terminale ou pour la Licence ?</summary>
+        <div class="ans">
+          <p>Les deux. Tokki est pensée pour le lycée (<strong>Terminale</strong>) et le supérieur (<strong>Licence</strong>, CM, TD). Le vocabulaire et le format des cours français sont le point de départ — pas une couche de traduction sur une app conçue ailleurs.</p>
+        </div>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary>Pourquoi Tokki plutôt qu’une app de notes IA en anglais ?</summary>
+        <div class="ans">
+          <p>Les apps de prise de notes IA pensées pour l’anglais (réunions, lectures universitaires US, style Otter) visent un autre usage. Tokki n’est pas un outil de meeting : elle sert à enregistrer tes cours en français et à en sortir des fiches. Pas le même métier.</p>
+        </div>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary>Quelle app pour enregistrer les cours et réviser après ?</summary>
+        <div class="ans">
+          <p>Si tu veux enregistrer le cours et en sortir un résumé + des fiches, Tokki est faite pour ça : micro, transcription, fiches classées par matière. Ce n’est pas un dictaphone générique. iPhone, sur l’App Store.</p>
+        </div>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary>Combien coûte Tokki ?</summary>
+        <div class="ans">
+          <p>3 jours d’essai gratuit. Ensuite : <strong>4,99€ / mois</strong>, ou <strong>39,99€ / an (−33 %)</strong>. Résiliable en 1 clic depuis les Réglages iOS.</p>
+        </div>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary>Que deviennent mes enregistrements ?</summary>
+        <div class="ans">
+          <p>Ils servent à générer le résumé et les fiches. L’audio est ensuite supprimé de nos serveurs (sous 60 secondes après traitement). Seuls tes résumés et tes fiches sont conservés, pour toi. Détails dans la <a href="/privacy">politique de confidentialité</a>.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
   <section>
     <h2>Tarifs</h2>
     <div class="plans">
@@ -244,6 +340,7 @@
 
   <footer>
     <nav>
+      <a href="#faq">FAQ</a>
       <a href="/privacy">Confidentialité</a>
       <a href="/terms">Conditions</a>
       <a href="/support">Support</a>
@@ -252,6 +349,63 @@
   </footer>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment Tokki transforme un cours en fiches de révision ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tu poses ton iPhone, tu enregistres le CM ou le TD, tu écoutes. Tokki transcrit, puis l’IA rédige un résumé structuré et des fiches de révision — en français, en quelques dizaines de secondes. Tu révises sur les fiches, pas sur l’audio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tokki, c’est pour la Terminale ou pour la Licence ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les deux. Tokki est pensée pour le lycée (Terminale) et le supérieur (Licence, CM, TD). Le vocabulaire et le format des cours français sont le point de départ — pas une couche de traduction sur une app conçue ailleurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi Tokki plutôt qu’une app de notes IA en anglais ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les apps de prise de notes IA pensées pour l’anglais (réunions, lectures universitaires US, style Otter) visent un autre usage. Tokki n’est pas un outil de meeting : elle sert à enregistrer tes cours en français et à en sortir des fiches. Pas le même métier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle app pour enregistrer les cours et réviser après ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si tu veux enregistrer le cours et en sortir un résumé + des fiches, Tokki est faite pour ça : micro, transcription, fiches classées par matière. Ce n’est pas un dictaphone générique. iPhone, sur l’App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien coûte Tokki ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3 jours d’essai gratuit. Ensuite : 4,99€ / mois, ou 39,99€ / an (−33 %). Résiliable en 1 clic depuis les Réglages iOS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que deviennent mes enregistrements ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ils servent à générer le résumé et les fiches. L’audio est ensuite supprimé de nos serveurs (sous 60 secondes après traitement). Seuls tes résumés et tes fiches sont conservés, pour toi."
+      }
+    }
+  ]
+}
+</script>
 
 </body>
 </html>
